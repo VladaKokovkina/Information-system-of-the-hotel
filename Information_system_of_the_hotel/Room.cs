@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Information_system_of_the_hotel
 {
+    [Serializable]
+    
     class Room
     {
         private string type;
@@ -16,12 +18,12 @@ namespace Information_system_of_the_hotel
             set { type = value; }
         }
 
-        private int priceperday;
+        private int pricePerDay;
 
-        public int Priceperday
+        public int PricePerDay
         {
-            get { return priceperday; }
-            set { priceperday = value; }
+            get { return pricePerDay; }
+            set { pricePerDay = value; }
         }
 
         private string status;
@@ -32,16 +34,16 @@ namespace Information_system_of_the_hotel
             set { status = value; }
         }
 
-        public Room(string _type, int _priceperday, string _status)
+        public Room(string _type, int _pricePerDay, string _status)
         {
             type = _type;
-            priceperday = _priceperday;
+            pricePerDay = _pricePerDay;
             status = _status;
         }
 
         public string Show()
         {
-            string st = "Тип комнаты:" + type + "\n Цена за сутки:" + priceperday.ToString() + "\n Статус комнаты:" + status;
+            string st = "Тип комнаты:" + type + "\n Цена за сутки:" + pricePerDay.ToString() + "\n Статус комнаты:" + status;
             return st;
         }
 

@@ -24,5 +24,27 @@ namespace Information_system_of_the_hotel
         {
             InitializeComponent();
         }
+
+        private void Out_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void enter_Click(object sender, RoutedEventArgs e)
+        {
+            if (username1.Text == "efremov" && password1.Text=="kdz")
+            {
+                Window1 s = new Window1();
+                s.Show();
+
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Неправильно введен логин или пароль");
+            }
+            
+        }
     }
 }

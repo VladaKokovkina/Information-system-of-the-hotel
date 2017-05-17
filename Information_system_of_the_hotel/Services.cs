@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Information_system_of_the_hotel
 {
+    [Serializable]
+
     class Services
     {
-        private string servicename;
+        private string serviceName;
 
-        public string Servicename
+        public string ServiceName
         {
-            get { return servicename; }
-            set { servicename = value; }
+            get { return serviceName; }
+            set { serviceName = value; }
         }
 
         private int price;
@@ -24,15 +26,15 @@ namespace Information_system_of_the_hotel
             set { price = value; }
         }
 
-        public Services(string _servicename, int _price)
+        public Services(string _serviceName, int _price)
         {
-            servicename = _servicename;
+            serviceName = _serviceName;
             price = _price;
         }
 
         public string Show()
         {
-            string st = "Наименование услуги:" + servicename + "\n Цена за оказание услуги:" + price.ToString();
+            string st = "Наименование услуги:" + serviceName + "\n Цена за оказание услуги:" + price.ToString();
             return st;
         }
     }

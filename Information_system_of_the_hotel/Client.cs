@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Information_system_of_the_hotel
 {
+    [Serializable]
+
     class Client
     {
         private string surname;
@@ -56,23 +58,23 @@ namespace Information_system_of_the_hotel
             set { passport = value; }
         }
 
-        private int arrivaldate;
+        private int arrivalDate;
 
-        public int Arrivaldate
+        public int ArrivalDate
         {
-            get { return arrivaldate; }
-            set { arrivaldate = value; }
+            get { return arrivalDate; }
+            set { arrivalDate = value; }
         }
 
-        private int depaturedate;
+        private int depatureDate;
 
-        public int Depaturedate
+        public int DepatureDate
         {
-            get { return depaturedate; }
-            set { depaturedate = value; }
+            get { return depatureDate; }
+            set { depatureDate = value; }
         }
 
-        public Client(string _surname, string _name, string _patronymic, string _gender, int _dob, int _passport, int _arrivaldate, int _depaturedate)
+        public Client(string _surname, string _name, string _patronymic, string _gender, int _dob, int _passport, int _arrivalDate, int _depatureDate)
         {
             surname = _surname;
             name = _name;
@@ -80,13 +82,13 @@ namespace Information_system_of_the_hotel
             gender = _gender;
             dob = _dob;
             passport = _passport;
-            arrivaldate = _arrivaldate;
-            depaturedate = _depaturedate;
+            arrivalDate = _arrivalDate;
+            depatureDate = _depatureDate;
         }
 
         public string Show()
         {
-            string st = "Фамилия:" + surname + "\n Имя:" + name + "\n Отчество:" + patronymic + "\n Год рождения:" + dob.ToString() + "\n Пол:" + gender + "\n Паспортные данные:" + passport.ToString() + "\n Дата въезда:" + arrivaldate.ToString() + "\n Дата выезда:" + depaturedate.ToString();
+            string st = "Фамилия:" + surname + "\n Имя:" + name + "\n Отчество:" + patronymic + "\n Год рождения:" + dob.ToString() + "\n Пол:" + gender + "\n Паспортные данные:" + passport.ToString() + "\n Дата въезда:" + arrivalDate.ToString() + "\n Дата выезда:" + depatureDate.ToString();
             return st;
         }
     }

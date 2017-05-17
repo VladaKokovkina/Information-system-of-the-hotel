@@ -1,0 +1,18 @@
+﻿<Window x:Class="Information_system_of_the_hotel.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Information_system_of_the_hotel"
+        mc:Ignorable="d"
+        Title="Информационная система гостиницы" Height="327.233" Width="547.731" FontSize="30">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="439*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="exit" Content="ВЫХОД" Grid.Column="2" HorizontalAlignment="Left" Margin="311.333,244,0,0" VerticalAlignment="Top" Width="117" Click="exit_Click"/>
+
+    </Grid>
+</Window>
