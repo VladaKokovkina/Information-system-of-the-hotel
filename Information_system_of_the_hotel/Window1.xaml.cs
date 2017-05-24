@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
+
 
 namespace Information_system_of_the_hotel
 {
@@ -19,13 +22,23 @@ namespace Information_system_of_the_hotel
     /// </summary>
     public partial class Window1 : Window
     {
+        
+
         public Window1()
         {
             InitializeComponent();
+            
+
+            /*List<Client> clientlist = new List<Client>();
+            Serialization.Deserialize(clientlist);
+            foreach(Client cl in clientlist)
+            {
+                dataguests.Items.Add(cl.show());
+            }*/
         }
 
-        private void exit_Click(object sender, RoutedEventArgs e)
-        {
+        private async void exit_Click(object sender, RoutedEventArgs e)
+        {     
             this.Close();
         }
     }

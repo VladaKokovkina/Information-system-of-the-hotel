@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Information_system_of_the_hotel
 {
     [Serializable]
-
     class Client
     {
         private string surname;
@@ -24,14 +23,6 @@ namespace Information_system_of_the_hotel
         {
             get { return name; }
             set { name = value; }
-        }
-
-        private string patronymic;
-
-        public string Patronymic
-        {
-            get { return patronymic; }
-            set { patronymic = value; }
         }
 
         private string gender;
@@ -74,11 +65,10 @@ namespace Information_system_of_the_hotel
             set { depatureDate = value; }
         }
 
-        public Client(string _surname, string _name, string _patronymic, string _gender, int _dob, int _passport, int _arrivalDate, int _depatureDate)
+        public Client(string _surname, string _name, string _gender, int _dob, int _passport, int _arrivalDate, int _depatureDate)
         {
             surname = _surname;
             name = _name;
-            patronymic = _patronymic;
             gender = _gender;
             dob = _dob;
             passport = _passport;
@@ -86,10 +76,9 @@ namespace Information_system_of_the_hotel
             depatureDate = _depatureDate;
         }
 
-        public string Show()
+        public string show()
         {
-            string st = "Фамилия:" + surname + "\n Имя:" + name + "\n Отчество:" + patronymic + "\n Год рождения:" + dob.ToString() + "\n Пол:" + gender + "\n Паспортные данные:" + passport.ToString() + "\n Дата въезда:" + arrivalDate.ToString() + "\n Дата выезда:" + depatureDate.ToString();
-            return st;
+            return surname + " " + name + " " + gender + " " + dob + " " + passport + " " + arrivalDate + " " + depatureDate;
         }
     }
 }

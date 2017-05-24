@@ -5,19 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Information_system_of_the_hotel"
         mc:Ignorable="d"
-        Title="Авторизация" Height="584.211" Width="1279.699" FontSize="34">
-    <Grid Margin="0,0,-181.667,-3.333" RenderTransformOrigin="0.468,0.454">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBlock x:Name="username" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="81,83,0,0" TextWrapping="Wrap" Text="Имя пользователя:" VerticalAlignment="Top" Height="67" Width="313" FontSize="34"/>
-        <TextBlock x:Name="password" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="81,232,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top" Height="81" Width="237" FontSize="34"/>
-        <TextBox x:Name="username1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="67" Margin="445,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" FontSize="34"/>
-        <TextBox x:Name="password1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="82" Margin="445,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" FontSize="34"/>
-        <Button x:Name="enter" Grid.ColumnSpan="3" Content="ВХОД" HorizontalAlignment="Left" Margin="136,398,0,0" VerticalAlignment="Top" Width="219" Height="74" FontSize="40" Click="enter_Click"/>
-        <Button x:Name="login" Grid.ColumnSpan="3" Content="Регистрация" HorizontalAlignment="Left" Margin="476,398,0,0" VerticalAlignment="Top" Width="310" Cursor="None" FontSize="40" Height="74" RenderTransformOrigin="0.057,0.46"/>
-        <Button x:Name="Out" Grid.ColumnSpan="3" Content="Отмена " HorizontalAlignment="Left" Margin="908,398,0,0" VerticalAlignment="Top" Width="184" FontSize="40" Height="74" Click="Out_Click"/>
+        Title="Start Page" Height="483" Width="900" FontSize="34"
+        Icon="icon.png">
+    <Grid Margin="0,0,-6.667,-3" RenderTransformOrigin="0.468,0.454">
+        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="456" VerticalAlignment="Top" Width="900" NavigationUIVisibility="Hidden"/>
+
     </Grid>
 </Window>

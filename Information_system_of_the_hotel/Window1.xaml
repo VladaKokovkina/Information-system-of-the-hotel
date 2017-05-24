@@ -5,14 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Information_system_of_the_hotel"
         mc:Ignorable="d"
-        Title="Информационная система гостиницы" Height="327.233" Width="547.731" FontSize="30">
+        Title="Information System Of The Hotel" Height="483" Width="900" FontSize="30">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="60*"/>
             <ColumnDefinition Width="439*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="exit" Content="ВЫХОД" Grid.Column="2" HorizontalAlignment="Left" Margin="311.333,244,0,0" VerticalAlignment="Top" Width="117" Click="exit_Click"/>
+        <Image x:Name="eleon_jpg" Margin="0,0,-6.667,-2.334" Source="eleon.jpg" Stretch="Fill" Grid.ColumnSpan="3"/>
+        <Image x:Name="frame_text_png_Copy" Margin="457,314,32.333,32.333" Source="frame text.png" Stretch="Fill" Grid.Column="2"/>
+
+        <Button x:Name="exit" Content="Exit" Grid.Column="2" HorizontalAlignment="Left" Margin="484,340,0,0" VerticalAlignment="Top" Width="180" Click="exit_Click" FontFamily="Harrington" FontSize="48" Foreground="#FFCAA03E" BorderBrush="{x:Null}" Background="{x:Null}" Height="54" RenderTransformOrigin="0.5,0.5"/>
+        <ListBox x:Name="dataguests" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="349" Margin="41,45,0,0" VerticalAlignment="Top" Width="563"/>
 
     </Grid>
 </Window>
