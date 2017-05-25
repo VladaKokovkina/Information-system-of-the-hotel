@@ -16,7 +16,7 @@
         <Label x:Name="type" Content="Type" HorizontalAlignment="Left" Margin="36,141,0,0" VerticalAlignment="Top" FontFamily="Harrington" FontSize="36" Background="{x:Null}" Foreground="#FFCAA03E"/>
         <Label x:Name="quantity" Content="Quantity of places" HorizontalAlignment="Left" Margin="36,199,0,0" VerticalAlignment="Top" Foreground="#FFCAA03E" Background="{x:Null}" FontFamily="Harrington" FontSize="36"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="363,141,0,0" VerticalAlignment="Top" Width="248" Height="33" FontSize="20" Opacity="0.75">
-            <Label>стандартный</Label>
+            <Label>стандарт</Label>
             <Label>люкс</Label>
         </ComboBox>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="363,217,0,0" VerticalAlignment="Top" Width="248" Height="33" FontSize="20" Opacity="0.75">
@@ -25,8 +25,8 @@
             <Label>3</Label>
             <Label>4</Label>
         </ComboBox>
-        <Button x:Name="enter" Content="Enter" HorizontalAlignment="Left" Margin="696,151,0,0" VerticalAlignment="Top" Width="145" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="48"/>
-        <ListBox x:Name="freerooms" HorizontalAlignment="Left" Height="175" Margin="36,280,0,0" VerticalAlignment="Top" Width="834"/>
+        <Button x:Name="enter" Content="Enter" HorizontalAlignment="Left" Margin="696,151,0,0" VerticalAlignment="Top" Width="145" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="48" Click="enter_Click"/>
+        <ListBox x:Name="freerooms" HorizontalAlignment="Left" Height="156" Margin="36,280,0,0" VerticalAlignment="Top" Width="834" Opacity="0.75"/>
 
     </Grid>
 </Page>

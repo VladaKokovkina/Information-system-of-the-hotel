@@ -75,6 +75,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EditPage.xaml.cs">
+      <DependentUpon>EditPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FindInformation.xaml.cs">
       <DependentUpon>FindInformation.xaml</DependentUpon>
     </Compile>
@@ -89,7 +92,6 @@
     </Compile>
     <Compile Include="Room.cs" />
     <Compile Include="Serialization.cs" />
-    <Compile Include="Services.cs" />
     <Compile Include="SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
     </Compile>
@@ -97,6 +99,10 @@
       <DependentUpon>SignUpGuest.xaml</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Page Include="EditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FindInformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -196,6 +202,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Resource Include="Rooms.txt" />
+    <Resource Include="Residents.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

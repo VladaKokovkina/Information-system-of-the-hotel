@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Information_system_of_the_hotel
 {
@@ -28,6 +29,31 @@ namespace Information_system_of_the_hotel
         private void ok_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new InformationAboutHotel());
+        }
+
+        private void find_Click(object sender, RoutedEventArgs e)
+        {
+            StreamReader str = new StreamReader("Residents.txt", Encoding.Default);
+            while (!str.EndOfStream)
+            {
+                string st = str.ReadLine();
+                if (st.StartsWith(surname.Text))
+                {
+                    info.Items.Add(st.ToString());
+                    break;
+                }
+            }
+            str.Close();
+        }
+
+        private void info_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        private void edit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new EditPage());
         }
     }
 }

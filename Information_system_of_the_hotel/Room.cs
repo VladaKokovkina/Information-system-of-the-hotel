@@ -50,7 +50,7 @@ namespace Information_system_of_the_hotel
             set { status = value; }
         }
 
-        public Room(int _number, string _type, int _place, int _pricePerDay, string _status)
+        public Room(int _number, string _type, int _place, string _status, int _pricePerDay)
         {
             number = _number;
             type = _type;

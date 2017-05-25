@@ -12,10 +12,10 @@
         <Image x:Name="eleon_jpg" Margin="0,0,-6.667,-2.334" Source="eleon.jpg" Stretch="Fill"/>
         <Label x:Name="findsurname" Content="Enter the surname of the resident" HorizontalAlignment="Left" Margin="37,10,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="36"/>
         <TextBox x:Name="surname" HorizontalAlignment="Left" Height="46" Margin="37,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" FontFamily="Harrington" FontSize="36" Opacity="0.75"/>
-        <Button x:Name="find" Content="Find" HorizontalAlignment="Left" Margin="728,49,0,0" VerticalAlignment="Top" Width="122" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="48" Height="53"/>
-        <ListBox x:Name="info" HorizontalAlignment="Left" Height="278" Margin="37,148,0,0" VerticalAlignment="Top" Width="531" FontSize="22" Opacity="0.75"/>
+        <Button x:Name="find" Content="Find" HorizontalAlignment="Left" Margin="728,49,0,0" VerticalAlignment="Top" Width="122" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="48" Height="53" Click="find_Click"/>
         <Button x:Name="ok" Content="Ok" HorizontalAlignment="Left" Margin="697,320,0,0" VerticalAlignment="Top" Width="106" Height="56" FontFamily="Harrington" FontSize="48" Foreground="#FFCAA03E" BorderBrush="{x:Null}" Background="{x:Null}" Click="ok_Click"/>
-        <Button x:Name="clear" Content="Delete a resident" HorizontalAlignment="Left" Margin="605,215,0,0" VerticalAlignment="Top" Width="270" Height="76" FontFamily="Harrington" FontSize="36" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E"/>
+        <Button x:Name="edit" Content="Edit Information" HorizontalAlignment="Left" Margin="605,215,0,0" VerticalAlignment="Top" Width="270" Height="76" FontFamily="Harrington" FontSize="36" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E" Click="edit_Click"/>
+        <ListBox x:Name="info" HorizontalAlignment="Left" Height="300" Margin="37,140,0,0" VerticalAlignment="Top" Width="531" FontSize="24" Opacity="0.75" SelectionChanged="info_SelectionChanged"/>
 
     </Grid>
 </Page>

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Information_system_of_the_hotel
 {
-    [Serializable]
     class Client
     {
         private string surname;
@@ -33,39 +32,39 @@ namespace Information_system_of_the_hotel
             set { gender = value; }
         }
 
-        private int dob;
+        private string dob;
 
-        public int Dob
+        public string Dob
         {
             get { return dob; }
             set { dob = value; }
         }
 
-        private int passport;
+        private string passport;
 
-        public int Passport
+        public string Passport
         {
             get { return passport; }
             set { passport = value; }
         }
 
-        private int arrivalDate;
+        private string arrivalDate;
 
-        public int ArrivalDate
+        public string ArrivalDate
         {
             get { return arrivalDate; }
             set { arrivalDate = value; }
         }
 
-        private int depatureDate;
+        private string depatureDate;
 
-        public int DepatureDate
+        public string DepatureDate
         {
             get { return depatureDate; }
             set { depatureDate = value; }
         }
 
-        public Client(string _surname, string _name, string _gender, int _dob, int _passport, int _arrivalDate, int _depatureDate)
+        public Client(string _surname, string _name, string _gender, string _dob, string _passport, string _arrivalDate, string _depatureDate)
         {
             surname = _surname;
             name = _name;

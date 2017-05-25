@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Information_system_of_the_hotel
 {
@@ -27,6 +28,30 @@ namespace Information_system_of_the_hotel
 
         private void signup_Click(object sender, RoutedEventArgs e)
         {
+                int guests = 0;
+                StreamReader sr = new StreamReader("Residents.txt");
+                while (!sr.EndOfStream)
+                {
+                    sr.ReadLine();
+                    ++guests;
+                }
+                sr.Close();
+                
+                if(surname1.Text == "" && name1.Text == "" && birth1.Text == "" && sex1.SelectedIndex == -1 && passport1.Text == "" && arrival1.Text == "" && depature1.Text == "")
+                {
+                    MessageBox.Show("Empty fields are not allowed!");
+                }
+                else if (55 - guests > 0)
+                {
+                    StreamWriter sw = new StreamWriter("Residents.txt", true);
+                    sw.WriteLine(surname1.Text + " " + name1.Text + " " + birth1.Text + " " + sex1.Text + " " + passport1.Text + " " + arrival1.Text + " " + depature1.Text + "\n");
+                    sw.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No available rooms");
+                }
+            
             NavigationService.Navigate(new InformationAboutHotel());
         }
     }

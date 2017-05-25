@@ -1,0 +1,17 @@
+﻿<Page x:Class="Information_system_of_the_hotel.EditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Information_system_of_the_hotel"
+      mc:Ignorable="d" 
+      d:DesignHeight="483" d:DesignWidth="900"
+      Title="EditPage">
+
+    <Grid>
+        <Image x:Name="eleon_jpg" Margin="0,0,-6.667,-2.334" Source="eleon.jpg" Stretch="Fill"/>
+        <TextBox x:Name="edit" HorizontalAlignment="Left" Height="356" Margin="26,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="729" TextChanged="edit_TextChanged" Opacity="0.75"/>
+        <Button x:Name="save" Content="Save changes and put in the file" HorizontalAlignment="Left" Margin="512,388,0,0" VerticalAlignment="Top" Width="378" Height="57" Click="save_Click" FontFamily="Harrington" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E"/>
+
+    </Grid>
+</Page>
