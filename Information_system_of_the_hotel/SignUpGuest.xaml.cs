@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace Information_system_of_the_hotel
 {
     /// <summary>
-    /// Interaction logic for InformationForGuests.xaml
+    /// Interaction logic for SignUpGuest.xaml
     /// </summary>
-    public partial class InformationForGuests : Page
+    public partial class SignUpGuest : Page
     {
-        public InformationForGuests()
+        public SignUpGuest()
         {
             InitializeComponent();
         }
 
-        private void back1_Click(object sender, RoutedEventArgs e)
+        private void signup_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new MainPage());
+            NavigationService.Navigate(new InformationAboutHotel());
         }
     }
 }

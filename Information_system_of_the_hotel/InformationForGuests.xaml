@@ -10,6 +10,23 @@
 
     <Grid>
         <Image x:Name="eleon_jpg" Margin="0,0,-6.667,-2.334" Source="eleon.jpg" Stretch="Fill"/>
+        <Image x:Name="frame_png" Margin="10,10,538,346.667" Source="frame.png" Stretch="Fill"/>
+        <Button x:Name="back1" Content="EFREM PLAZA" HorizontalAlignment="Left" Margin="36,44,0,0" VerticalAlignment="Top" Width="307" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Castellar" FontSize="36" Foreground="#FFCAA03E" Click="back1_Click"/>
+        <Label x:Name="findaroom" Content="Find a free room" HorizontalAlignment="Left" Margin="420,39,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="36"/>
+        <Label x:Name="type" Content="Type" HorizontalAlignment="Left" Margin="36,141,0,0" VerticalAlignment="Top" FontFamily="Harrington" FontSize="36" Background="{x:Null}" Foreground="#FFCAA03E"/>
+        <Label x:Name="quantity" Content="Quantity of places" HorizontalAlignment="Left" Margin="36,199,0,0" VerticalAlignment="Top" Foreground="#FFCAA03E" Background="{x:Null}" FontFamily="Harrington" FontSize="36"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="363,141,0,0" VerticalAlignment="Top" Width="248" Height="33" FontSize="20" Opacity="0.75">
+            <Label>стандартный</Label>
+            <Label>люкс</Label>
+        </ComboBox>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="363,217,0,0" VerticalAlignment="Top" Width="248" Height="33" FontSize="20" Opacity="0.75">
+            <Label>1</Label>
+            <Label>2</Label>
+            <Label>3</Label>
+            <Label>4</Label>
+        </ComboBox>
+        <Button x:Name="enter" Content="Enter" HorizontalAlignment="Left" Margin="696,151,0,0" VerticalAlignment="Top" Width="145" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="48"/>
+        <ListBox x:Name="freerooms" HorizontalAlignment="Left" Height="175" Margin="36,280,0,0" VerticalAlignment="Top" Width="834"/>
 
     </Grid>
 </Page>

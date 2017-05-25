@@ -51,7 +51,7 @@ namespace Information_system_of_the_hotel
                 {
                     int id = Convert.ToInt16(reader["Id"]);
                     user = new User(username1.Text, id);
-                    //NavigationService.Navigate(new InformationAboutHotel());
+                    NavigationService.Navigate(new InformationAboutHotel());
                 }
             }
             else

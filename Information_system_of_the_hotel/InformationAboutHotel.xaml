@@ -1,0 +1,21 @@
+﻿<Page x:Class="Information_system_of_the_hotel.InformationAboutHotel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Information_system_of_the_hotel"
+      mc:Ignorable="d" 
+      d:DesignHeight="483" d:DesignWidth="900"
+      Title="InformationAboutHotel">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="439*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="eleon_jpg" Margin="0,0,-6.667,-2.334" Source="eleon.jpg" Stretch="Fill" Grid.ColumnSpan="3"/>
+        <Button x:Name="newgust" Content="To sign up a new guest" HorizontalAlignment="Left" Margin="102.667,129,0,0" VerticalAlignment="Top" Width="361" Height="44" Grid.Column="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="34" Click="newgust_Click"/>
+        <Button x:Name="find" Content="Find information abour residents" Grid.Column="2" HorizontalAlignment="Left" Margin="29.667,277,0,0" VerticalAlignment="Top" Width="516" Height="59" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="34" Click="find_Click"/>
+    </Grid>
+</Page>

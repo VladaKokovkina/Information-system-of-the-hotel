@@ -12,11 +12,11 @@
         <Image x:Name="eleon_jpg" Margin="-7,0,0.333,-2.667" Source="eleon.jpg" Stretch="Fill"/>
         <Label x:Name="login" Content="Login" HorizontalAlignment="Left" Margin="115,153,0,0" VerticalAlignment="Top" FontFamily="Harrington" FontSize="48" Foreground="#FFCAA03E"/>
         <Label x:Name="password" Content="Password" HorizontalAlignment="Left" Margin="115,247,0,0" VerticalAlignment="Top" Foreground="#FFCAA03E" FontFamily="Harrington" FontSize="48"/>
-        <TextBox x:Name="username1" HorizontalAlignment="Left" Height="46" Margin="350,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Opacity="0.8" FontFamily="Harrington" FontSize="38"/>
+        <TextBox x:Name="username1" HorizontalAlignment="Left" Height="46" Margin="350,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Opacity="0.75" FontFamily="Harrington" FontSize="38"/>
         <Image x:Name="frame_png" Margin="10,10,538,346.667" Source="frame.png" Stretch="Fill"/>
         <Button x:Name="back" Content="efrem plaza" HorizontalAlignment="Left" Margin="36,27,0,0" VerticalAlignment="Top" Width="285" Height="67" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFCAA03E" FontFamily="Castellar" FontSize="36" Click="back_Click"/>
         <Image x:Name="frame_text_png_Copy" Margin="593,331,23,9.667" Source="frame text.png" Stretch="Fill"/>
         <Button x:Name="forward" Content="Sign In" HorizontalAlignment="Left" Margin="626,349,0,0" VerticalAlignment="Top" Width="220" FontFamily="Harrington" FontSize="48" Foreground="#FFCAA03E" BorderBrush="{x:Null}" Background="{x:Null}" Click="forward_Click" MouseEnter="forward_MouseEnter" MouseLeave="forward_MouseLeave" Height="76"/>
-        <PasswordBox x:Name="password1" HorizontalAlignment="Left" Margin="350,267,0,0" VerticalAlignment="Top" Height="46" Width="375" Opacity="0.8" FontFamily="Harrington" FontSize="48"/>
+        <PasswordBox x:Name="password1" HorizontalAlignment="Left" Margin="350,267,0,0" VerticalAlignment="Top" Height="46" Width="375" Opacity="0.75" FontFamily="Harrington" FontSize="48"/>
     </Grid>
 </Page>

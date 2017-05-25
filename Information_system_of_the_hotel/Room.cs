@@ -10,12 +10,28 @@ namespace Information_system_of_the_hotel
     
     class Room
     {
+        private int number;
+
+        public int Number
+        {
+            get { return number; }
+            set { number = value; }
+        }
+
         private string type;
 
         public string Type
         {
             get { return type; }
             set { type = value; }
+        }
+
+        private int place;
+
+        public int Place
+        {
+            get { return place; }
+            set { place = value; }
         }
 
         private int pricePerDay;
@@ -34,16 +50,18 @@ namespace Information_system_of_the_hotel
             set { status = value; }
         }
 
-        public Room(string _type, int _pricePerDay, string _status)
+        public Room(int _number, string _type, int _place, int _pricePerDay, string _status)
         {
+            number = _number;
             type = _type;
+            place = _place;
             pricePerDay = _pricePerDay;
             status = _status;
         }
 
         public string Show()
         {
-            string st = "Тип комнаты:" + type + "\n Цена за сутки:" + pricePerDay.ToString() + "\n Статус комнаты:" + status;
+            string st = "Номер комнаты:"+ number + "\n Тип комнаты:" + type + "\n Сколько мест в номере:"+ place + "\n Цена за сутки:" + pricePerDay.ToString() + "\n Статус комнаты:" + status;
             return st;
         }
 

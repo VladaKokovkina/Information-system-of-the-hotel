@@ -75,6 +75,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindInformation.xaml.cs">
+      <DependentUpon>FindInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationAboutHotel.xaml.cs">
+      <DependentUpon>InformationAboutHotel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InformationForGuests.xaml.cs">
       <DependentUpon>InformationForGuests.xaml</DependentUpon>
     </Compile>
@@ -87,10 +93,18 @@
     <Compile Include="SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
+    <Compile Include="SignUpGuest.xaml.cs">
+      <DependentUpon>SignUpGuest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
+    <Page Include="FindInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationAboutHotel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="InformationForGuests.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,7 +130,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="SignUpGuest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
